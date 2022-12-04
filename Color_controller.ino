@@ -55,13 +55,13 @@ void setup() {
 
   //  Define APIs
   server.on("/", handle_root);
-  server.on("/red", handle_root);
-  server.on("/blue",handle_root);
-  server.on("/green",handle_root);
-  server.on("/yellow",handle_root);
-  server.on("/magenta",handle_root);
-  server.on("/orange",handle_root);
-  server.on("/cyan",handle_root);
+  server.on("/red", handle_red);
+  server.on("/blue",handle_blue);
+  server.on("/green",handle_green);
+  server.on("/yellow",handle_yellow);
+  server.on("/magenta",handle_magenta);
+  server.on("/orange",handle_orange);
+  server.on("/cyan",handle_cyan);
 
   server.onNotFound(handle_notfound);
 
