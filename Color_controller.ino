@@ -146,6 +146,9 @@ void color_generator(byte r , byte g , byte b) {
   ledcWrite(b_channel , b);
 }
 
+void handle_notfound(){ 
+  server.send(200 , "text/plain" , "Can't find anything, please try again!");
+}
 
 //  generating HTML Page
 String generate_html() {
